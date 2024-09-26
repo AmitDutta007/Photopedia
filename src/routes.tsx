@@ -6,11 +6,12 @@ import Home from "./pages/Home";
 import Post from "./pages/post";
 import Profile from "./pages/profile";
 import MyPhotos from "./pages/myphotos";
+import ProtectedRoutes from "./components/protectedRoutes";
 // import ProtectedRoutes from "./components/protectedRoutes";
 
 export const router = createBrowserRouter([
     {
-        // element: <ProtectedRoutes />,
+        element: <ProtectedRoutes />,
         children: [
             {
                 path: "/",
