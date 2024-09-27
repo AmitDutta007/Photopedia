@@ -11,6 +11,8 @@ import image2 from "@/assets/images/image2.jpg";
 import image3 from "@/assets/images/image3.jpg";
 import image4 from "@/assets/images/image4.jpg";
 import { Icons } from "@/components/ui/icons";
+
+
 const initialValue: UserSignIn = {
   email: "",
   password: "",
@@ -24,6 +26,8 @@ const Signup: React.FunctionComponent<ISignupProps> = (props) => {
   const { googleSignIn, signUp } = useUserAuth();
   const navigate = useNavigate();
   const [userInfo, setUserInfo] = React.useState<UserSignIn>(initialValue);
+
+
   const handleGoogleSignIn = async (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
     try {
